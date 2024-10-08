@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Page Title -->
+   <title>{{ $pagetitle }} | KOLs Management System</title>
+
+   <!-- Meta Data -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="KOLs Management System, a product of Trendi AI">
+   <meta name="keywords" content="">
+
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="{{url('/')}}/trendifavicon.png">
+
+   <!-- Web Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+   <!-- ======= BEGIN GLOBAL MANDATORY STYLES ======= -->
+   <link rel="stylesheet" href="{{url('/')}}/vendor/bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="{{url('/')}}/fonts/icofont/icofont.min.css">
+   <link rel="stylesheet" href="{{url('/')}}/vendor/perfect-scrollbar/perfect-scrollbar.min.css">
+   <!-- ======= END BEGIN GLOBAL MANDATORY STYLES ======= -->
+
+   <!-- ======= MAIN STYLES ======= -->
+   <link rel="stylesheet" href="{{url('/')}}/css/style.css">
+   <link rel="stylesheet" href="{{url('/')}}/css/kms.css">
+   <!-- ======= END MAIN STYLES ======= -->
+
+</head>
+
+<body>
+
+    <!-- Offcanval Overlay -->
+    <div class="offcanvas-overlay"></div>
+    <!-- Offcanval Overlay -->
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+        @include('parts.header')
+
+        <!-- Main Wrapper -->
+        <div class="main-wrapper">
+            @include('parts.sidebar')
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <h3>Social Comment Generation</h3>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <div class="card mb-30 px-3 py-3">
+                                <div class="row">
+                                    <div class="col-lg-12 card-form__body card-body">
+                                    <div class="table-responsive">
+                <table id="page-table" class="table thead-border-top-0">
+                    <thead>
+                    <tr>
+                        <th class="table-header table-header__id" style="width: 3rem;">
+                            <h6 class="text-capitalize">id</h6>
+                        </th>
+                        <th class="table-header table-header__title">
+                            <h6 class="text-capitalize text-center">title</h6>
+                        </th>
+                        <th class="table-header table-header__page-id">
+                            <h6 class="text-capitalize text-center">fanpage <span class="text-uppercase">id</span></h6>
+                        </th>
+                        <th class="table-header table-header__page-access-token">
+                            <h6 class="text-capitalize text-center">token</h6>
+                        </th>
+                        <th class="table-header table-header__chatgpt-assistant-id">
+                            <h6 class="text-capitalize text-center">assistant <span class="text-uppercase">id</span>
+                            </h6>
+                        </th>
+                        <th class="table-header table-header__reaction">
+                            <h6 class="text-capitalize text-center">reaction</h6>
+                        </th>
+                        <th class="table-header table-header__follower">
+                            <h6 class="text-capitalize text-center">follower</h6>
+                        </th>
+                        <th class="table-header table-header__impression">
+                            <h6 class="text-capitalize text-center">impression</h6>
+                        </th>
+                        <th class="table-header table-header__message-bot" style="width: 78px;">
+                            <h6 class="text-capitalize text-center">message bot</h6>
+                        </th>
+                        <th class="table-header table-header__comment-bot" style="width: 78px;">
+                            <h6 class="text-capitalize text-center">comment bot</h6>
+                        </th>
+
+
+
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                                        <tr id="page_2">
+                        <td><span>2</span></td>
+                        <td class="text-center"><span>Fnews.ai - The Fastest News</span></td>
+                        <td class="text-center"><span>335323586336510</span></td>
+                        <td class="text-center text-truncate" style="max-width: 200px;">
+                            <span>EAACmdYiJpVABO07RZAj9QZCZBSorCaU3qbUvJ84dlIODhh7LYeZAfMuh196zVMZAsCR9vEAVqw9ZCJ5w9DUaJUlbM4ZAAZCQXK4eUqMJhRZBQh4ejxgCNBBTVjKjmZBwoDdidnzp5KP6xCOpEfEEXdvpYxMvwZA8NXJWXSROGUMSf2t62PMNl6PAir7COTZALQW0F6BUc6Mu5iSS2W7goAZDZD</span>
+                        </td>
+                        <td class="text-center table-cell__chatgpt-assistant-id">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="flex-grow-1">asst_B0eChKO5rAdsFtSJ1EOAEO0Q</span>
+                                <span id="2-edit-assistant" class="material-icons action action__update-btn js-edit-assistant-id-btn" style="font-size: 20px;" data-toggle="modal" data-target="#edit-assistant" data-page="2" data-assistant="2" onclick="handleUpdateAssistantIdPopupContent(event)"> edit </span>
+                            </div>
+                        </td>
+                        <td class="text-center"><span>4631</span></td>
+                        <td class="text-center"><span>42605</span></td>
+                        <td class="text-center"><span>77127</span></td>
+                        <td>
+                            <div class="custom-control custom-checkbox-toggle mx-auto">
+                                <input id="page_2_message-bot" name="page_2_message-bot" type="checkbox" checked="" class="custom-control-input js-status__toggle-btn" data-toggle="modal" data-target="#warning--status" data-warning="page_2_message-bot" data-url="https://fbb.trendi.ai/pages/messenger_status/2">
+                                <label for="page_2_message-bot" class="custom-control-label text-capitalize"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-checkbox-toggle mx-auto">
+                                <input id="page_2_comment-bot" name="page_2_comment-bot" type="checkbox" checked="" class="custom-control-input js-status__toggle-btn" data-toggle="modal" data-target="#warning--status" data-warning="page_2_comment-bot" data-url="https://fbb.trendi.ai/pages/comment_status/2">
+                                <label for="page_2_comment-bot" class="custom-control-label text-capitalize"></label>
+                            </div>
+                        </td>
+
+
+
+
+
+
+
+                    </tr>
+                                        <tr id="page_1">
+                        <td><span>1</span></td>
+                        <td class="text-center"><span>Quỳnh Châu</span></td>
+                        <td class="text-center"><span>179075925975510</span></td>
+                        <td class="text-center text-truncate" style="max-width: 200px;">
+                            <span>EAACmdYiJpVABO0q8N5tDwjyX0wL1XYeY49qNjvGb0L5ajCgZBevBMFQrZA2Y6xJol4MddDxpApkCLMlUDvA8trnRZCm2hRtbeh0B3Fg50H70iOLQElKl2QCxp82ZC4MAYt1h53p25U1zFWbjJMavbqiOlWHZAB5d7Cs8LvrZBjLDQOXE5e99YLayWUlwlApqiKNHvHxkEpCBRy</span>
+                        </td>
+                        <td class="text-center table-cell__chatgpt-assistant-id">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="flex-grow-1">asst_B0eChKO5rAdsFtSJ1EOAEO0Q</span>
+                                <span id="1-edit-assistant" class="material-icons action action__update-btn js-edit-assistant-id-btn" style="font-size: 20px;" data-toggle="modal" data-target="#edit-assistant" data-page="1" data-assistant="1" onclick="handleUpdateAssistantIdPopupContent(event)"> edit </span>
+                            </div>
+                        </td>
+                        <td class="text-center"><span>204</span></td>
+                        <td class="text-center"><span>28005</span></td>
+                        <td class="text-center"><span>26922</span></td>
+                        <td>
+                            <div class="custom-control custom-checkbox-toggle mx-auto">
+                                <input id="page_1_message-bot" name="page_1_message-bot" type="checkbox" class="custom-control-input js-status__toggle-btn" data-toggle="modal" data-target="#warning--status" data-warning="page_1_message-bot" data-url="https://fbb.trendi.ai/pages/messenger_status/1">
+                                <label for="page_1_message-bot" class="custom-control-label text-capitalize"></label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="custom-control custom-checkbox-toggle mx-auto">
+                                <input id="page_1_comment-bot" name="page_1_comment-bot" type="checkbox" class="custom-control-input js-status__toggle-btn" data-toggle="modal" data-target="#warning--status" data-warning="page_1_comment-bot" data-url="https://fbb.trendi.ai/pages/comment_status/1">
+                                <label for="page_1_comment-bot" class="custom-control-label text-capitalize"></label>
+                            </div>
+                        </td>
+
+
+
+
+
+
+
+                    </tr>
+                                    </tbody></table>
+            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Main Content -->
+        </div>
+        <!-- End Main Wrapper -->
+
+        @include('parts.footer')
+    </div>
+    <!-- End wrapper -->
+
+    <!-- ======= BEGIN GLOBAL MANDATORY SCRIPTS ======= -->
+    <script src="{{ url('/') }}/js/jquery.min.js"></script>
+    <script src="{{ url('/') }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url('/') }}/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="{{ url('/') }}/js/script.js"></script>
+    <!-- ======= BEGIN GLOBAL MANDATORY SCRIPTS ======= -->
+
+    <script>
+        $(document).ready(function() {
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+/*@font-face {font-family: 'Montserrat';font-weight: 100;src: url('../fonts/Montserrat/Montserrat-Thin.ttf');}
+@font-face {font-family: 'Montserrat';font-weight: 200;src: url('../fonts/Montserrat/Montserrat-ExtraLight.ttf');}
+@font-face {font-family: 'Montserrat';font-weight: 300;src: url('../fonts/Montserrat/Montserrat-Light.ttf');}
+@font-face {font-family: 'Montserrat';font-weight: 400;src: url('../fonts/Montserrat/Montserrat-Regular.ttf');}
+@font-face {font-family: 'Montserrat';font-weight: 500;src: url('../fonts/Montserrat/Montserrat-Medium.ttf');}
+@font-face {font-family: 'Montserrat';font-weight: 600;src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf');}
+@font-face {font-family: 'Montserrat';font-weight: 700;src: url('../fonts/Montserrat/Montserrat-Bold.ttf');}
+@font-face {font-family: 'Montserrat';font-weight: 900;src: url('../fonts/Montserrat/Montserrat-Black.ttf');}
+
+@font-face {font-family: 'Montserrat';font-weight: 100;font-style: italic;src: url('../fonts/Montserrat/Montserrat-ThinItalic.ttf');}
+@font-face {font-family: 'Montserrat';font-weight: 200;font-style: italic;src: url('../fonts/Montserrat/Montserrat-ExtraLightItalic.ttf');}
+@font-face {font-family: 'Montserrat';font-weight: 300;font-style: italic;src: url('../fonts/Montserrat/Montserrat-LightItalic.ttf');}
+@font-face {font-family: 'Montserrat';font-weight: 400;font-style: italic;src: url('../fonts/Montserrat/Montserrat-RegularItalic.ttf');}
+@font-face {font-family: 'Montserrat';font-weight: 500;font-style: italic;src: url('../fonts/Montserrat/Montserrat-MediumItalic.ttf');}
+@font-face {font-family: 'Montserrat';font-weight: 600;font-style: italic;src: url('../fonts/Montserrat/Montserrat-SemiBoldItalic.ttf');}
+@font-face {font-family: 'Montserrat';font-weight: 700;font-style: italic;src: url('../fonts/Montserrat/Montserrat-BoldItalic.ttf');}
+@font-face {font-family: 'Montserrat';font-weight: 900;font-style: italic;src: url('../fonts/Montserrat/Montserrat-BlackItalic.ttf');}*/
+
+body, h1, h2, h3, h4, h5, h6, p, a, ul, li, span, div, input, button {
+  font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3 {
+  color: #1d9bd1;
+}
+
+.header .logo {
+  background-color: inherit;
+  padding: 10px 21px;
+}
+.main-header-social-connect .header-icon {
+  width: auto;
+  font-weight: 600;
+  padding-right: 15px;
+  padding-left: 0;
+}
+.main-header-social-connect.facebook .header-icon {
+  background-color: #fff;
+  color: #0866FF;
+  border: 1px solid #0866FF;
+}
+.main-header-social-connect.facebook .header-icon:hover,
+.main-header-social-connect.facebook.connected .header-icon {
+  background-color: #0866FF;
+  color: #fff;
+}
+.main-header-social-connect.facebook .header-icon i {
+  color: #fff;
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0866FF;
+  border-radius: 50%;
+}
+
+.sidebar .sidebar-body ul ul {
+  padding-left: 0;
+}
+.sidebar .sidebar-body ul.sub-menu li:before {
+  content: none;
+}
+.sidebar .sidebar-body li.active > a {
+  color: #8280FD;
+  font-weight: 600;
+}
+
+.card-body .title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card-body .subtitle {
+  color: green;
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.card-body .bar {
+  height: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  margin-bottom: 5px;
+  position: relative;
+}
+.card-body .bar img {
+  position: absolute;
+  right: 5px;
+  top: -8px;
+  cursor: pointer;
+}
+.card-body .bar .fill {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #1d9bd1;
+}
+.card-body .label {
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+#profileFullname {
+  color: #1d7ebd;
+  font-weight: bold;
+}
+textarea.theme-input-style {
+  height: 90px;
+}
+.input-group-prepend .input-group-text {
+  height: 100%;
+  border-radius: 5px 0 0 5px !important;
+}
+
+.autocomplete {
+  position: relative;
+  width: 100%;
+}
+#autocomplete-input {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #f8f9fa !important;
+  border-radius: 0 20px 20px 0;
+}
+.suggestions {
+  position: absolute;
+  width: 100%;
+  background-color: #f8f9fa;
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: 9;
+}
+.suggestions::-webkit-scrollbar-track {
+  background: #f8f9fa;
+  border: none;
+}
+.background-suggestions {
+  position: absolute;
+  top: 20px;
+  background-color: #f8f9fa;
+  width: 100%;
+  height: 20px;
+  left: 0;
+  z-index: -1;
+}
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+.suggestion-item:hover, .suggestion-item.selected {
+  background-color: #f0f0f0;
+}
+
+.profile-pic {
+  width: 100px;
+  height: auto;
+  margin-top: 0;
+}
+
+i {
+  color: #219bd1;
+}
+i.large {
+  font-size: 5rem;
+}
+i.square {
+  background-color: #219bd1;
+  border-radius: 3px;
+  color: #fff;
+  padding: 3px;
+}
+
+.table-view {
+  width: 100%;
+  overflow: auto;
+}
+table th {
+  border: 1px solid #fff;
+  background-color: #cfe2ff !important;
+}
+.table-responsive .dt-layout-table {
+  margin-top: .5rem !important;
+  margin-bottom: .5rem !important;
+}
+tr[id^="Profile"]:hover td {
+  background-color: #ecf3fd;
+}
+
+a.fc-event{
+  cursor: pointer;
+  padding: 5px 8px;
+}
+
+@media (max-width: 575px) {
+  .header .logo {
+    padding: 10px;
+  }
+}
